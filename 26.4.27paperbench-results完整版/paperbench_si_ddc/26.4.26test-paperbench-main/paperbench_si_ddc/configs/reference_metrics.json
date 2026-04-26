@@ -1,0 +1,12 @@
+{
+  "paper": "Stochastic Interpolants with Data-Dependent Couplings",
+  "arxiv_id": "2310.03725",
+  "table_2_inpainting_fid50k": {
+    "inpainting_uncoupled": 1.35,
+    "inpainting_dependent": 1.13
+  },
+  "table_3_superres_64_to_256_fid50k": {
+    "superres_dependent_train": 2.13,
+    "superres_dependent_valid": 2.05
+  }
+}

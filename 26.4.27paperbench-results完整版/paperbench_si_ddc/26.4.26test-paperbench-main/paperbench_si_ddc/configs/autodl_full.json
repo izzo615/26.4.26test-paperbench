@@ -1,0 +1,79 @@
+{
+  "seed": 231003725,
+  "persistent_root": "/AutoDL-pub/paperbench_si_ddc",
+  "output_leaf": "collected_results/image/outputs_image",
+  "paper_pdf": "",
+  "dataset": {
+    "source": "huggingface",
+    "name": "cifar10",
+    "train_split": "train",
+    "valid_split": "test",
+    "image_key": "img",
+    "label_key": "label",
+    "cache_dir": "/AutoDL-pub/paperbench_si_ddc/cache/huggingface",
+    "local_root": "",
+    "local_train_dir": "",
+    "local_valid_dir": "",
+    "num_classes": 10
+  },
+  "runtime": {
+    "device": "auto",
+    "num_workers": 4,
+    "pin_memory": true,
+    "amp": true,
+    "log_every": 100,
+    "save_every": 5000,
+    "sample_every": 10000,
+    "loader_batch_size": 8
+  },
+  "paper_hparams": {
+    "train_steps": 2000,
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0,
+    "sample_steps": 64,
+    "resnet_block_groups": 8,
+    "tile_grid": 8,
+    "tile_keep_probability": 0.3
+  },
+  "model": {
+    "base_dim": 64,
+    "dim_mults": [1, 2, 4, 8]
+  },
+  "figures": {
+    "figure3_examples": 4,
+    "figure4_examples": 4,
+    "figure5_slices": 6,
+    "figure6_examples": 8,
+    "figure7_slices": 6
+  },
+  "metrics": {
+    "num_generated_samples": 10000,
+    "num_reference_samples": 10000,
+    "batch_size": 64
+  },
+  "experiments": {
+    "inpainting_uncoupled": {
+      "enabled": true,
+      "task": "inpainting",
+      "coupling": "uncoupled",
+      "resolution": 32,
+      "checkpoint_name": "inpainting_uncoupled.pt"
+    },
+    "inpainting_dependent": {
+      "enabled": true,
+      "task": "inpainting",
+      "coupling": "dependent",
+      "resolution": 32,
+      "checkpoint_name": "inpainting_dependent.pt"
+    },
+    "superres_dependent": {
+      "enabled": true,
+      "task": "super_resolution",
+      "coupling": "dependent",
+      "resolution": 32,
+      "condition_resolution": 8,
+      "checkpoint_name": "superres_dependent.pt"
+    }
+  }
+}

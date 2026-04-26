@@ -1,0 +1,16 @@
+{
+  "dimensions": {
+    "code_completeness": 60.0,
+    "model_fidelity": 40.0,
+    "experiment_reproducibility": 100.0,
+    "visual_similarity": 0.0,
+    "quantitative_metric_error": 0.0,
+    "engineering_completeness": 60.0
+  },
+  "overall_score": 41.0,
+  "deductions": {
+    "checkpoint_coverage": 0.0,
+    "figure_coverage": 100.0,
+    "metric_gap": 100.0
+  }
+}

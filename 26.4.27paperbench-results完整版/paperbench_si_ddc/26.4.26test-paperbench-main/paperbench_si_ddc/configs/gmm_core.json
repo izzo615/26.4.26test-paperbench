@@ -1,0 +1,43 @@
+{
+  "seed": 7,
+  "device": "auto",
+  "train_steps": 1400,
+  "batch_size": 512,
+  "val_batch_size": 4096,
+  "eval_interval": 50,
+  "learning_rate": 0.0015,
+  "weight_decay": 1e-05,
+  "hidden_dim": 128,
+  "depth": 4,
+  "time_features": 16,
+  "sigma": 0.35,
+  "t_eps": 0.02,
+  "sample_count": 3000,
+  "metric_count": 2048,
+  "trajectory_count": 96,
+  "trajectory_steps": 160,
+  "problem": {
+    "target_means": [
+      [4.0, -3.0],
+      [4.0, 0.0],
+      [4.0, 3.0]
+    ],
+    "base_means": [
+      [-4.0, -3.0],
+      [-4.0, 0.0],
+      [-4.0, 3.0]
+    ],
+    "target_cov": [
+      [0.32, 0.0],
+      [0.0, 0.18]
+    ],
+    "affine": [
+      [0.65, 0.28],
+      [-0.18, 0.92]
+    ],
+    "dependent_noise_cov": [
+      [0.05, 0.0],
+      [0.0, 0.04]
+    ]
+  }
+}
