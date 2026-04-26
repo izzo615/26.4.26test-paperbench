@@ -1,0 +1,10 @@
+{
+  "device": "cpu",
+  "checkpoints": {},
+  "metric_paths": {},
+  "report_paths": {
+    "json": "C:\\Users\\86139\\Documents\\New project\\paperbench_si_ddc\\output\\local_debug\\reports\\paperbench_score_report.json",
+    "markdown": "C:\\Users\\86139\\Documents\\New project\\paperbench_si_ddc\\output\\local_debug\\reports\\paperbench_score_report.md"
+  },
+  "archive_path": "C:\\Users\\86139\\Documents\\New project\\paperbench_si_ddc\\output\\local_debug\\archives\\paperbench_si_ddc_results.zip"
+}
